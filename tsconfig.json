@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "ESNext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@shared/*": ["./packages/shared/*"],
+            "@web/*": ["./packages/web/*"],
+            "@svgs/*": ["./packages/web/public/svgs/*"]
+        }
+    },
+    "include": ["**/*.ts", "**/*.tsx", "types.d.ts", "package/bar/index.js"]
+}

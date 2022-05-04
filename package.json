@@ -1,0 +1,19 @@
+{
+    "name": "yarn-workspace-next-template",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "scripts": {
+        "dev": "yarn workspace web dev",
+        "build": "yarn workspace web build",
+        "start": "yarn workspace web start",
+        "lint": "yarn workspace web lint"
+    },
+    "packageManager": "yarn@3.2.0",
+    "devDependencies": {
+        "typescript": "^4.6.4"
+    }
+}
